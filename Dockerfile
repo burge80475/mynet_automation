@@ -6,7 +6,7 @@ ARG		DEBIAN_FRONTEND=noninteractive
 RUN		apt-get update && apt-get -yq --no-install-recommends \
 		install apt-utils telnet curl openssh-client nano vim-tiny iputils-ping python3.6 build-essential cloud-init \
 		libxml2-dev libxslt1-dev libssl-dev libffi-dev python3-pip python3-setuptools python3-dev net-tools software-properties-common \
-		&& apt-add-repository -y ppa:ansible/ansible-2.8 \
+		&& apt-add-repository -y ppa:ansible/ansible-2.9 \
 		&& apt-get update && apt-get -y --no-install-recommends install ansible \
 		&& rm -rf /var/lib/apt/lists/* \
 		&& python3 -m pip install --upgrade pip setuptools wheel \
