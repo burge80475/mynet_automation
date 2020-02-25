@@ -16,7 +16,6 @@ RUN		apt-get update && apt-get -yq --no-install-recommends \
 		&& pip3 install "cryptography==2.5" \
 		&& pip3 install ncclient netmiko napalm pyntc \
 		&& pip3 install genie \
-		&& apt-get install --assume-yes git \
 		&& pip3 install pyang \
 		&& pip3 install --upgrade paramiko && mkdir /scripts \
 		&& mkdir -p /root/.ssh \
