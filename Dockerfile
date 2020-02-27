@@ -17,6 +17,7 @@ RUN		apt-get update && apt-get -yq --no-install-recommends \
 		&& pip3 install ncclient netmiko napalm pyntc \
 		&& pip3 install genie \
 		&& pip3 install pyang \
+		&& apt-get install snapd \
 		&& pip3 install --upgrade paramiko && mkdir /scripts \
 		&& mkdir -p /root/.ssh \
 		&& echo "KexAlgorithms diffie-hellman-group1-sha1,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1" > /root/.ssh/config \
