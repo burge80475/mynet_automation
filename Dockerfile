@@ -1,6 +1,7 @@
 # docker base image for Python3,Netmiko, NAPALM, Pyntc, and Ansible2.8
 
 FROM	ubuntu:18.04
+Maintainer Terry Burgess 
 
 ARG		DEBIAN_FRONTEND=noninteractive 
 RUN		apt-get update && apt-get -yq --no-install-recommends \
